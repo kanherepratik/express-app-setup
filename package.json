@@ -1,0 +1,28 @@
+{
+  "name": "express-app-base",
+  "version": "0.0.1",
+  "description": "Base setup to start creating express app in minutes",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandiprb/express-app-setup.git"
+  },
+  "author": "Sandip Baradiya <baradiya.sandip@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandiprb/express-app-setup/issues"
+  },
+  "homepage": "https://github.com/sandiprb/express-app-setup#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "nunjucks": "^3.0.0",
+    "serve-favicon": "^2.3.0"
+  }
+}
