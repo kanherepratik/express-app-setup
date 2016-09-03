@@ -22,13 +22,14 @@ nunjucks.configure((dir.views), {
 });
 
 /* ---- Middle wares ---- */
-// uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use('/static', express.static(dir.static))
+app.disable('x-powered-by');
+
 
 /* ---- Routes ---- */
 app.use('/', require(dir.routes + 'index.js'));
